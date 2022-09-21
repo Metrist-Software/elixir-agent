@@ -15,7 +15,7 @@ defmodule Metrist.Agent do
 
   Record.defrecord(
     :hackney_url,
-    Record.extract(:hackney_url, from: "deps/hackney/include/hackney_lib.hrl")
+    Record.extract(:hackney_url, from_lib: "hackney/include/hackney_lib.hrl")
   )
 
   defmodule State do
