@@ -11,7 +11,8 @@ defmodule Metrist.Agent.MixProject do
       deps: deps(),
       description: description(),
       package: package(),
-      name: "Metrist Agent"
+      name: "Metrist Agent",
+      source_url: "https://github.com/Metrist-Software/elixir-agent"
     ]
   end
 
@@ -25,7 +26,8 @@ defmodule Metrist.Agent.MixProject do
     [
       {:hackney, "~> 1.18"},
       {:jason, "~> 1.2"},
-      {:httpoison, "~> 1.8", only: [:test]}
+      {:httpoison, "~> 1.8", only: [:test]},
+      {:ex_doc, "~> 0.14", only: :dev, runtime: false}
     ]
   end
 
